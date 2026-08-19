@@ -1,0 +1,10 @@
+// Tema A: rojo, sans-serif, esquinas rectas, sombra dura
+$tema: (
+  color-base:        #ff0000,
+  color-important:   #5c0000,
+  color-warning:     #ffb6c1,
+  fuente-principal:  (Arial, Helvetica, sans-serif),
+  fuente-secundaria: ("Comic Sans MS", "Comic Sans", cursive),
+  radius:            0,
+  sombra:            (6px 6px 8px rgba(0, 0, 0, 0.55)),
+);
