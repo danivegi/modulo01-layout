@@ -1,0 +1,56 @@
+@use "sass:color";
+
+/* ============================================================
+   Ejercicio 1 — Crear una paleta de colores dinámica.
+    Usar el lenguaje Sass para crear distintos temas de paletas de colores.
+    La idea es partir de un color base, y a partir de ese color generar 4 colores más oscuros de manera gradual, y cuatro colores más claros de manera gradual.
+    Para comprobar que todo está funcionando como se espera utilizar el siguiente html:
+   ============================================================ */
+
+// Colores base
+$temas: (
+    "red": #e53935,
+    "blue": #3f51b5,
+    "green": #43a047,
+);
+
+//Ajuste por escalón
+$paso: 20%;
+$niveles: 4;
+
+// Estilos las cajas
+.box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: center;
+}
+
+// 4. Generación de la paleta
+@each $nombre, $base in $temas {
+    .container-#{$nombre} {
+        display: flex;
+        gap: 4px;
+        margin-bottom: 12px;
+
+        .base-color {
+            background-color: $base;
+        }
+
+        @for $i from 1 through $niveles {
+            .darken-#{$i} {
+                background-color: color.scale($base, $lightness: -$i * $paso);
+            }
+
+            .lighten-#{$i} {
+                background-color: color.scale($base, $lightness: $i * $paso);
+            }
+        }
+    }
+}
