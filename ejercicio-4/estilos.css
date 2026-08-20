@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/* ============================================================
+Ejercicio 4 — Crearemos un elemento de tipo card con Grid CSS.
+Las alineaciones deberán hacerse con esta característica, 
+pero el html es totalmente abierto.
+============================================================ */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 24px;
+  background-color: #f4f4f4;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: auto auto;
+  width: 300px;
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-body {
+  display: grid;
+  gap: 16px;
+  padding: 20px;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.card-text {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #888888;
+}
+
+.card-date {
+  margin: 0;
+  justify-self: end;
+  font-size: 13px;
+  color: #555555;
+}
+
+.card-date span {
+  color: #8bc34a;
+}
+
+.card-btn {
+  display: block;
+  padding: 14px;
+  background-color: #8bc34a;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+}/*# sourceMappingURL=estilos.css.map */
