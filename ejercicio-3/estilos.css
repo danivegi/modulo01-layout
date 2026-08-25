@@ -26,7 +26,6 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: #0e7d87;
-  width: 50%;
 }
 
 .nav-item a {
