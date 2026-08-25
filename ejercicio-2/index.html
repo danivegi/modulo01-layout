@@ -1,127 +1,21 @@
 <!DOCTYPE html>
-<html lang="es"><head><meta charset="UTF-8">
-<title>Ejercicio 2 — Vista previa</title>
-<style>
-body { margin:24px; }
-.wrap { display:flex; gap:120px; }
-.tema-a {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #1a1a1a;
-}
-.tema-a .cajas {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  width: 120px;
-  margin-bottom: 16px;
-}
-.tema-a .caja {
-  padding: 22px 14px;
-  border-radius: 0;
-  font-weight: 700;
-}
-.tema-a .base {
-  background-color: #ff0000;
-}
-.tema-a .important {
-  background-color: #5c0000;
-}
-.tema-a .warning {
-  background-color: #ffb6c1;
-}
-.tema-a .texto-principal {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 4px 0;
-}
-.tema-a .texto-secundaria {
-  font-family: "Trebuchet MS", Verdana, sans-serif;
-  margin: 4px 0;
-}
-.tema-a .caja-sombra {
-  display: inline-block;
-  width: 120px;
-  margin-top: 12px;
-  padding: 18px 14px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 0;
-  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.55);
-  font-weight: 700;
-}
-
-.tema-b {
-  font-family: Georgia, "Times New Roman", serif;
-  color: #1a1a1a;
-}
-.tema-b .cajas {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  width: 120px;
-  margin-bottom: 16px;
-}
-.tema-b .caja {
-  padding: 22px 14px;
-  border-radius: 8px;
-  font-weight: 700;
-}
-.tema-b .base {
-  background-color: #0000ff;
-}
-.tema-b .important {
-  background-color: #000066;
-}
-.tema-b .warning {
-  background-color: #00ffff;
-}
-.tema-b .texto-principal {
-  font-family: Georgia, "Times New Roman", serif;
-  margin: 4px 0;
-}
-.tema-b .texto-secundaria {
-  font-family: "Times New Roman", Georgia, serif;
-  margin: 4px 0;
-}
-.tema-b .caja-sombra {
-  display: inline-block;
-  width: 120px;
-  margin-top: 12px;
-  padding: 18px 14px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25);
-  font-weight: 700;
-}
-
-</style></head>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 2 — Temas</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
 <body>
-  <div class="wrap">
-    <div>
-      <h3 style="font-family:Arial;font-weight:normal;color:#555">Resultado tema A</h3>
-      <div class="tema-a">
-        <div class="cajas">
-          <div class="caja base">Base</div>
-          <div class="caja important">Important</div>
-          <div class="caja warning">Warning</div>
-        </div>
-        <p class="texto-principal">Principal font</p>
-        <p class="texto-secundaria">Secondary font</p>
-        <div class="caja-sombra">Box with shadow</div>
-      </div>
-    </div>
-    <div>
-      <h3 style="font-family:Arial;font-weight:normal;color:#555">Resultado tema B</h3>
-      <div class="tema-b">
-        <div class="cajas">
-          <div class="caja base">Base</div>
-          <div class="caja important">Important</div>
-          <div class="caja warning">Warning</div>
-        </div>
-        <p class="texto-principal">Principal font</p>
-        <p class="texto-secundaria">Secondary font</p>
-        <div class="caja-sombra">Box with shadow</div>
-      </div>
-    </div>
+  <div class="cajas">
+    <div class="caja base">Base</div>
+    <div class="caja important">Important</div>
+    <div class="caja warning">Warning</div>
   </div>
-</body></html>
+
+  <p class="texto-principal">Principal font</p>
+  <p class="texto-secundaria">Secondary font</p>
+
+  <div class="caja-sombra">Box with shadow</div>
+</body>
+</html>

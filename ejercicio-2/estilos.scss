@@ -1,12 +1,10 @@
 // ============================================================
 // Ejercicio 2 — Temas intercambiables
-// Para cambiar de tema, comenta una línea y descomenta la otra:
+// Importa la estructura común y luego UN tema.
+// Para cambiar de tema, comente una línea y descomente la otra.
 // ============================================================
-@use "scss/tema-a" as tema;
-// @use "scss/tema-b" as tema;
 
 @use "scss/componentes";
 
-.tema {
-  @include componentes.aplicar-tema(tema.$tema);
-}
+@use "scss/tema-a";
+//@use "scss/tema-b";

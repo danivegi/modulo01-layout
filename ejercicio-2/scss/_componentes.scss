@@ -1,39 +1,32 @@
-@use "sass:map";
+body {
+  margin: 24px;
+}
 
-// Pinta todos los componentes usando los valores del mapa de tema recibido.
-@mixin aplicar-tema($t) {
-  font-family: map.get($t, fuente-principal);
+.cajas {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 120px;
+  margin-bottom: 16px;
+}
+
+.caja {
+  padding: 22px 14px;
+  font-weight: 700;
   color: #1a1a1a;
+}
 
-  .cajas {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-    width: 120px;
-    margin-bottom: 16px;
-  }
+.texto-principal,
+.texto-secundaria {
+  margin: 4px 0;
+}
 
-  .caja {
-    padding: 22px 14px;
-    border-radius: map.get($t, radius);
-    font-weight: 700;
-  }
-  .base      { background-color: map.get($t, color-base); }
-  .important { background-color: map.get($t, color-important); }
-  .warning   { background-color: map.get($t, color-warning); }
-
-  .texto-principal  { font-family: map.get($t, fuente-principal); margin: 4px 0; }
-  .texto-secundaria { font-family: map.get($t, fuente-secundaria); margin: 4px 0; }
-
-  .caja-sombra {
-    display: inline-block;
-    width: 120px;
-    margin-top: 12px;
-    padding: 18px 14px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: map.get($t, radius);
-    box-shadow: map.get($t, sombra);
-    font-weight: 700;
-  }
+.caja-sombra {
+  display: inline-block;
+  width: 120px;
+  margin-top: 12px;
+  padding: 18px 14px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  font-weight: 700;
 }
