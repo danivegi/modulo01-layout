@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* ============================================================
 Ejercicio 4 — Crearemos un elemento de tipo card con Grid CSS.
-Las alineaciones deberán hacerse con esta característica, 
+Las alineaciones deberán hacerse con esta característica,
 pero el html es totalmente abierto.
 ============================================================ */
 * {
@@ -14,10 +14,15 @@ body {
   background-color: #f4f4f4;
 }
 
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
 .card {
   display: grid;
-  grid-template-rows: auto auto;
-  width: 300px;
+  grid-template-rows: auto 1fr;
   background-color: #ffffff;
   border: 1px solid #e6e6e6;
 }
@@ -32,6 +37,7 @@ body {
 
 .card-body {
   display: grid;
+  grid-template-rows: auto 1fr auto auto;
   gap: 16px;
   padding: 20px;
 }
